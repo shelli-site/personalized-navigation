@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build --mode=production"
   },
   "dependencies": {
+    "ant-design-vue": "^1.6.2",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "dayjs": "^1.8.28",
+    "filemanager-webpack-plugin": "^2.0.5",
+    "vue": "^2.6.11",
+    "vue-awesome": "^4.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.0",
