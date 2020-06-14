@@ -1,7 +1,8 @@
 const dayjs = require('dayjs');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 const path = require('path');
-function resolve (dir) {
+
+function resolve(dir) {
     return path.join(__dirname, dir)
 }
 
@@ -24,7 +25,7 @@ module.exports = {
             .when(process.env.NODE_ENV === 'production', config => {
                 config
                     .plugin('filemanager')
-                    .use(FileManagerPlugin,[{
+                    .use(FileManagerPlugin, [{
                         onEnd: {
                             delete: [
                                 `./${process.env.VUE_APP_PROJECT_NAME}*.zip`,
