@@ -1,8 +1,9 @@
 import axios from 'axios'
+import {weatherAppId, weatherAppSecret} from '../../setting'
 
 export function getWeather() {
     return new Promise((resolve, reject) => {
-        let version = 'v9', appid = '31796436', appsecret = 'ZBC9yQ7Z';
+        let version = 'v9', appid = weatherAppId, appsecret = weatherAppSecret;
         axios.get('http://www.tianqiapi.com/api', {params: {version, appid, appsecret}}).then(res => {
             let {city, data} = res.data;
             let today = {

@@ -1,0 +1,43 @@
+/* Animation */
+/**
+ * fade 淡入淡出
+ */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .3s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
+    opacity: 0;
+}
+
+/**
+ * scroll-top 向上滚动
+ */
+.scroll-top-enter-active, .scroll-top-leave-active {
+    transition: all .5s ease;
+}
+
+.scroll-top-enter {
+    transform: translateY(-100%);
+}
+
+.scroll-top-leave-to {
+    transform: translateY(100%);
+}
+
+/**
+ * fade-top 上浮出现
+ */
+.fade-top-enter-active, .fade-top-leave-active {
+    transition: all .3s ease;
+}
+
+.fade-top-enter {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.fade-top-leave-to {
+    /*transform: translateY(100%);*/
+}

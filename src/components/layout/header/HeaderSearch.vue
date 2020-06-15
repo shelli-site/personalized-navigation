@@ -29,29 +29,3 @@
     }
 </script>
 
-<style lang="scss" scoped>
-    .search {
-        height: 100%;
-        padding: 10px 0;
-        display: flex;
-        flex-direction: column;
-
-        .search-main {
-            width: 100%;
-            height: 46px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .peripheral-information {
-            width: 660px;
-            height: 20px;
-            margin-top: 10px;
-            align-self: center;
-            margin-right: -137px;
-            padding: 0 60px 0 13px;
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-</style>
