@@ -2,8 +2,7 @@
     <div class="info">
         <div class="logo">
             <div class="title">
-                <img src="../../../assets/logo.png" alt="">
-                <div class="name">shelli</div>
+                <div class="name"><div>SHELLI</div><div>SITE</div></div>
             </div>
         </div>
         <div class="location-weather">

@@ -89,10 +89,37 @@ div {
 
     .name {
       line-height: 33px;
-      font-size: 33px;
-      color: #4ba634;
-      margin-bottom: -14px;
-      margin-left: 68px;
+      height: 33px;
+      width: 120px;
+      background-color: #000000;
+      padding: 3px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+
+      & > div {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 2px;
+        font-size: 18px;
+        padding: 0 2px;
+      }
+
+      & > div:first-child {
+        width: 60%;
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 3px 0 3px 3px;
+      }
+
+      & > div:last-child {
+        width: 40%;
+        background-color: #000000;
+        color: #ffffff;
+      }
     }
 
     img {
